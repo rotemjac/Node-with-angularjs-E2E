@@ -1,0 +1,25 @@
+
+	
+	<div>
+		  
+		 <div  class="glyphicon glyphicon-hand-down"  ng-show="{{ 'hideData_' + $index }}"  ng-click="toggleHideData($index)"></div>
+		 <div  class="glyphicon glyphicon-hand-up"    ng-hide="{{ 'hideData_' + $index }}"  ng-click="toggleHideData($index)"></div>
+		 
+		 <span class="infoHeader"> {{info.header}} </span>     	
+   	
+	</div>
+	          
+
+	<br>
+		
+	<div collapse="{{  'hideData_' + $index }}">
+	    <li class="regListItem" ng-repeat = "dataRow in info.dataRows">
+			{{dataRow}} <br/>
+		</li>  	
+	</div>
+	
+
+
+
+
+

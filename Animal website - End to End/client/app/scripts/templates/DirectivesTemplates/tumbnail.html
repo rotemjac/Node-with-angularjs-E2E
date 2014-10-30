@@ -1,0 +1,27 @@
+
+<!--
+<div ng-class="( {{'alignToLeft_' +index}} ) ? 'myAlignToLeft' : '' ">
+-->
+	
+	<div class='col-md-4 hide-fade' ng-class="( checkTumbnail($index) ) ? ' myExpandWithFade' : '' " ng-hide="{{'hideAllTumb_' + $index}}" >
+			<div class="thumbnail myShowWithFade">
+				 <img ng-src={{tumb.photo}}>
+						<div class="caption">
+							<h3>{{tumb.header}}</h3>
+							<div collapse="{{'isCollapsed_' +$index }}">  {{tumb.data}} </div>
+						</div>
+						
+						<div>
+									<a class="btn" ng-click="toggleTumbnailData($index)"  ng-show="{{'isCollapsed_' +$index }}"  > Continue reading</a>
+									<a class="btn" ng-click="toggleTumbnailData($index)"  ng-hide="{{'isCollapsed_' +$index }}"  > Show less</a>								
+						</div>
+			</div>
+	</div>
+
+<!--</div>-->
+
+
+
+
+
+

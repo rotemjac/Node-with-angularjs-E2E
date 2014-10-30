@@ -1,0 +1,17 @@
+
+
+<div class="col-md-12 column myFooter myShowWithFade">
+	<ul class= "nav navbar-nav padFooter" ng-controller="navAndFooterCtrl">
+			<li ng-repeat="navColumn in allColumnsData">	
+					<div class="footerColumn" ng-show   =  "{{  'dropDownFlag_' + $index }}" ng-class="{addBorderRight: $index==(allColumnsData.length-1)}">						
+						<h3 class="footerHeader"  >{{navColumn.mainTitle}}</h3>
+						<ul >
+								<li class="regListItem" ng-repeat="subColumn in navColumn.subHeaders">
+									<a class="regLinkItem" href="{{subColumn.ref}}">{{subColumn.title}}</a>
+								</li>
+						</ul>
+					</div>
+					
+			</li>
+	</ul>	
+</div>

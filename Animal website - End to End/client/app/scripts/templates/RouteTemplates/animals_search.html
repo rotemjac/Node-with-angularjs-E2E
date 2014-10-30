@@ -1,0 +1,25 @@
+
+
+	<page-header data='animals'></page-header>
+
+	
+	<div class="row clearfix ">
+				
+		<div class="col-md-12 column well myShowWithFade" ng-controller="animalsCtrl">
+			
+			<img width="300" height="300" src="{{animalPhotoUrl}}"/>
+
+			<observed-input></observed-input>				
+			
+			
+			<ul class="smallPadding">
+				<h2 class="underLine">Information on {{info.name}}</h2> 
+				<li class="regListItem" ng-repeat = "info in animalData">
+					<info-collapse></info-collapse>
+					<br>
+				</li>
+			</ul>			
+		</div>
+		
+	</div>
+	

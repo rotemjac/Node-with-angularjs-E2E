@@ -1,0 +1,69 @@
+
+
+<div class="row clearfix col-md-12 column ">
+		<h3 class="infoHeader"> {{camp.campHeader}} Zoo Camp </h3>
+</div>
+
+
+<div class="row clearfix col-md-12 column">	
+		<table class="table table-bordered table-hover">
+			<tbody>
+				<tr class="info">
+					<td width=40px> <strong>Ages: </strong> </td> 
+					<td> {{camp.ages}}</td>
+				</tr>
+				<tr class="info">
+					<td width=40px> <strong>Dates: </strong> </td> 
+					<td> {{camp.dates}} </td>
+				</tr>
+				<tr class="info">
+					<td width=40px> <strong>Additional data: </strong> </td> 
+					<td> {{camp.moreData}} </td>
+				</tr>			
+		    </tbody>
+		</table>	
+</div>	
+
+<div class="row clearfix col-md-12 column">
+	<table class="table table-bordered">
+		<tbody>
+			<tr>	
+				<td class="col-md-6 column addDashedBorderRight">
+					
+					<h5     class="underLine">      </h5>
+					<h5>    <strong>Fees</strong>   </h5>
+					<h5     class="underLine">      </h5>
+			
+					<label  ng-repeat = "fee in camp.fees" class="addMargin" >
+							<input type="radio" ng-model="campInputData.FeeRadioModel" ng-value="fee"    class="addRightMargin">{{fee.category}}<br>			 								
+							<costs></costs>
+					</label>
+
+				</td>
+				
+				<td class="col-md-6 column">	
+					<h5     class="underLine">      </h5>
+					<h5>    <strong>Additional Services</strong>   </h5>
+					<h5     class="underLine">      </h5>
+
+					<label  ng-repeat = "serv in camp.additionalServices" class="addMargin" >
+							<input type="radio" ng-model="campInputData.ServRadioModel" ng-value="serv"  class="addRightMargin">{{serv.category}} : {{serv.price | currency}}<br>			 								
+					</label>					
+			
+				</td>
+				
+			</tr>
+		</tbody>
+	</table>
+	
+	<table>
+		<tbody>
+				<tr>
+					<button class="btn btn-primary" ng-click="registerNow()"> Register now</button>
+				</tr>
+		</tbody>
+	</table>
+
+</div>
+
+

@@ -1,0 +1,17 @@
+
+
+	<page-header data='faq'></page-header>
+
+	
+	<div class="row clearfix ">		
+		<div class="col-md-9 column well myShowWithFade" ng-controller="faqCtrl">
+			<h2 class="underLine">Information</h2>
+			<ul class="smallPadding">
+				<li class="regListItem" ng-repeat = "info in allInfo"> 
+					<info-collapse mydata="info"></info-collapse>
+					<br>
+				</li>
+			</ul>			
+		</div>
+	</div>
+	

@@ -1,0 +1,28 @@
+
+<page-header data='zooCamp'></page-header>
+
+<section id="zooCamps" class="row clearfix well myShowWithFade" ng-controller="zooCampsCtrl">
+	
+	<div class="row clearfix">				
+			<div class="col-md-12 column">			
+				<div class="col-md-7 column addDashedBorderRight">
+					<img width=540 height=374 ng-src="{{::photoUrl}}">
+				</div>
+				<div class="col-md-5 column">
+					{{::overView}}
+				</div>												
+			</div>
+	</div>
+	
+	<div class="row clearfix">			
+			<div class="col-md-12 column">	
+				<ul class="smallPadding">
+					<li class="regListItem" ng-repeat = "camp in allCamps"> 
+						<camp></camp>
+						<br>
+					</li>
+				</ul>
+			</div>			
+	</div>
+
+</section>

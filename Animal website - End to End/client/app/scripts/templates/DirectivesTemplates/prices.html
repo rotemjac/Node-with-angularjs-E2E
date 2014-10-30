@@ -1,0 +1,22 @@
+
+
+	<h2 class="underLine">Pricing table</h2>
+
+	<table class="table table-bordered table-hover">
+		<thead>
+			<tr class="active">
+				<th>Category </th>
+				<th>Price</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat = "price in prices" class="success">
+				<td> {{price.category}} </td>
+				<td> {{price.price}} </td>
+			</tr>
+	    </tbody>
+	</table>
+
+
+
+

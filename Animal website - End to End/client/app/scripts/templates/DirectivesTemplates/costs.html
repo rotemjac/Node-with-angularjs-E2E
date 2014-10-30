@@ -1,0 +1,7 @@
+
+
+<label ng-repeat="cost in fee.costs">											
+		<input type="radio" ng-model="feeInputData.FeeRadioSubModel" ng-value="cost"  ng-disabled="campInputData.FeeRadioModel != fee" class="subRadioButton"> 
+		{{cost.cost}} : {{cost.price | currency }} 
+</label>
+										

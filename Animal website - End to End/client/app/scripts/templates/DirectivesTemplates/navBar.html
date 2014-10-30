@@ -1,0 +1,18 @@
+
+
+<div class="nav-collapse">
+	<ul class="nav navbar-nav" ng-controller="navAndFooterCtrl">
+			<li class="dropdown" ng-repeat="navColumn in allColumnsData">	
+				    <a ng-hide   =  "{{  'dropDownFlag_' + $index }}"                   href="{{navColumn.mainRef}}">{{navColumn.mainTitle}}</a>
+					
+					<a  ng-show  =  "{{  'dropDownFlag_' + $index }}" class="dropdown-toggle" data-toggle="dropdown">{{navColumn.mainTitle}}</a>
+					<ul ng-show  =  "{{  'dropDownFlag_' + $index }}" class="dropdown-menu">
+							<li ng-repeat="subColumn in navColumn.subHeaders">
+								<a href="{{subColumn.ref}}">{{subColumn.title}}</a>
+							</li>
+					</ul>
+					
+			</li>
+	</ul>	
+</div>
+

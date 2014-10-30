@@ -1,0 +1,26 @@
+
+	
+	
+	<page-header data='directionsAndParking'></page-header>
+
+	
+	<div class="row clearfix ">
+		
+		<div class="col-md-6 column well myShowWithFade" ng-controller="directionsAndParkingCtrl">
+			<h2 class="underLine">Directions And Parking</h2>
+			<ul class="smallPadding">
+                <li class="regListItem" ng-repeat = "info in allInfo">
+                    <info2></info2>
+                </li>
+			</ul>
+		</div>
+		
+		<div class="col-md-1 column "></div>
+		
+		<div class="col-md-5 column well myShowWithFade" ng-controller="pricesCtrl"> 
+					<prices-table></prices-table>
+		</div>
+	
+	</div>
+
+	

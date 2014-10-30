@@ -1,0 +1,26 @@
+
+
+        <header class="modal-header">
+            <h3 class="modal-title">Details of order - {{data.campName}} camp</h3>
+        </header>
+        <section class="modal-body">
+        	
+        	<p>Payment for {{data.feeData.cost}}: <b>{{data.feeData.price 	 | currency}}</b>.</p>
+        	<p>{{data.dropOrPickup.category}}: 		<b>{{data.dropOrPickup.price | currency}}</b>.</p>
+			<br>
+			<p>Total payment:	<b>{{totalPrice | currency}}</b></p>
+        	
+        	<br>
+	        <div class="form-group">
+	            <label >Enter your email:</label>
+	            <input type="email" ng-model="inputData.emailModel" ng-pattern="EMAIL_REGEXP" class="form-control">
+	        </div>
+			<div ng-show="inputData.validEmail=='showMessageSent'" class="alert alert-success">A message was sent to your email.</div>
+			<div ng-show="inputData.validEmail=='showInvalidMail'" class="alert alert-danger">Please enter an email.</div>	        
+	        
+ 		</section>       
+        <footer class="modal-footer">
+            <button class="btn btn-primary" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </footer>
+        

@@ -1,0 +1,147 @@
+
+/* -------------------------- Overriding bootstrap dafaults -------------------- */
+
+.form-control {
+	display:inline;
+	width: 75%;
+}
+
+/* ------------------------------- My definitions ------------------------------ */
+body {
+	background-image: url('../images/Backgrounds/tropycal.jpg');
+	background-color: #265700;	
+}
+
+/* In order to get rid of the annoying 40px left margin on unordered list in WebKit	*/
+ul {
+	margin  : 0px;
+	padding : 0px;
+}
+
+.mainCarusel img {
+/* width: 100%;*/
+  height: 500px;
+  max-height: 225px;
+}
+
+
+.navbar-default {
+	border-color: #AAAAAA;
+}
+
+.addMargin {
+	margin-top:10px;
+}
+
+.addLeftMargin {
+	margin-left:10px;
+}
+
+.addRightMargin {
+	margin-right:10px;
+}
+
+.regListItem {
+	list-style-type: none;
+}
+
+.horizontalListItem {
+	display: inline;
+}
+
+.underLine {
+	border-bottom: 1px solid #999999;
+	margin-bottom: 20px;
+}
+
+.smallPadding{
+	padding-left:10px;
+}
+
+.myToolbar {
+	margin-top: 10px;
+
+}
+
+
+.myLogo {
+	margin: 10px;
+	width:  50px; 
+	height: 30px;
+}
+
+
+
+
+/* Tickets and Hours page*/
+.mycontent-left {
+  border-right: 1px dashed #333;
+}
+
+.infoHeader {
+	background-color: #dff0d8;
+	font-weight: 300;
+	font-size: 20px;
+	padding-left: 10px;
+}
+
+/* Tumbnails - override bootstrap height and width */
+.thumbnail > img {
+	height : 300px;
+	width  : 350px;
+}
+
+/* Our camps page */
+.subRadioButton {
+	margin: 10px 0px 0px 40px;
+}
+
+
+
+/* Footer*/
+.myFooter {
+	margin-top: 15px;
+	width: 100%;
+	height: 130px;
+
+	border-radius: 4px;
+
+	background-color: #E1CD7F;
+}
+
+.padFooter {
+	padding-top: 5px;
+	padding-left: 220px;
+	margin-bottom: 30px;
+}
+
+.footerHeader {
+	font-size :16px;
+}
+
+.footerColumn {
+	margin-left:   10px;
+	padding-left:  20px;
+	padding-right: 20px;
+	border-left:   1px solid #A0955A;
+}
+
+.addBorderRight {
+	border-right:   1px solid #A0955A;
+}
+
+.addDashedBorderRight {
+	border-right:   1px dashed #A0955A;
+}
+
+.regLinkItem {
+	color: black;
+	font-weight :400;
+	width: 200px;
+}
+
+.regLinkItem:hover {
+	color: #678b12;
+	text-decoration: none;
+}
+
